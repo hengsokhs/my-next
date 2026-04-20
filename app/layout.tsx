@@ -42,6 +42,7 @@ export default function RootLayout({
                     <div className={"flex gap-6"}>
                         <Link href="/dashboard" className={"hover:text-blue-600 transition-colors"}>Home</Link>
                         <Link href={"/about"} className={"hover:text-blue-600 transition-colors"}>About</Link>
+                        <Link href="/posts" className="hover:text-blue-600 transition-colors">Posts</Link>
                     </div>
                 </nav>
                 {children}
