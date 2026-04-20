@@ -35,14 +35,14 @@ export default function RootLayout({
         >
         {/*min-h-full flex flex-col*/}
         <body>
-        <ThemeProvider attribute="class" defaultTheme="dark" enableSystem disableTransitionOnChange={false}>
+        <ThemeProvider attribute="class" defaultTheme="light" enableSystem disableTransitionOnChange={false}>
             <div>
                 <nav className={" border-b px-8 py-4 flex item-center justify-between"}>
                     <h1 className={"text-2xl font-bold text-white-600"}>My Next</h1>
                     <div className={"flex gap-6"}>
                         <Link href="/dashboard" className={"hover:text-blue-600 transition-colors"}>Home</Link>
                         <Link href={"/about"} className={"hover:text-blue-600 transition-colors"}>About</Link>
-                        <Link href="/posts" className="hover:text-blue-600 transition-colors">Posts</Link>
+                        <Link href={"/posts"} className={"hover:text-blue-600 transition-colors"}>Posts</Link>
                     </div>
                 </nav>
                 {children}
